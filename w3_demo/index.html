@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+    Title:  Week 3 Class Demo
+    Author: Clint MacDonald
+    Date: May 21, 2024
+    Purpose: Multimedia, BASIC CSS, and Intro to Tables
+-->
+<!-- https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/666182/headshot/67/current -->
+<html lang="EN">
+    <head>
+        <title>Week 3 Demo</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <h1 id="MainHeading">Week 3 Demo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora debitis ipsa est nam, unde repellendus explicabo ea assumenda, similique qui accusantium? Fugit velit tempora itaque nihil architecto! Vero, velit non.</p>
+
+        <p id="Warning">Warning: you should pay attention in class because the professor will cover things that will be on the test.</p>
+
+        <h2>sub-heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="Special">Ratione, voluptatem?</span> Quia eaque beatae delectus tempore perferendis, tempora, esse doloremque labore eligendi pariatur sit possimus error dolores laborum distinctio voluptate similique?</p> 
+
+        <h1 id="Warning" class="Special">Another main heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo vitae ipsam? Ut accusantium harum nostrum maiores repellendus, eos saepe, dolores cum consequuntur, recusandae magnam minima laborum eligendi nihil suscipit.</p>
+        
+        <h1>Toronto Blue Jays</h1>
+        
+        <table cellspacing="1" cellpadding="20">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="/images/romano.jpg" alt="Jordan Romano Image" class="PlayerImage">
+                    </td>
+                    <td>Jordan Romano</td>
+                    <td>68</td>
+                </tr> 
+                <tr>
+                    <td>
+                        <img src="images/vlad.jpg" alt="Vladimir Guerrero Jr. Image" class="PlayerImage">
+                    </td>
+                    <td>Vladimir Guerrero Jr.</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/666182/headshot/67/current" alt="Bo Bichette" class="PlayerImage">
+                    </td>
+                    <td>Bo Bichette</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">&copy; Clint, 2024</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>Audio Files</h1>
+        <audio controls>
+            <source src="audio/ThunderCrack.mp3" type="audio/mpeg">
+            Your browser does not support the given type!
+        </audio>
+        <audio controls>
+            <source src="audio/Plenty_Step.mp3" type="audio/mpeg">
+            Your browser does not support the given type!
+        </audio>
+    </body>
+</html>
