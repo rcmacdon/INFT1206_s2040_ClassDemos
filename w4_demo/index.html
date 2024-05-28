@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+    Title:   Week 4 Demo
+    Author:  Clint MacDonald
+    Date:    May 28, 2024
+    Purpose: More advanced image, multimedia, and tables
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table cellspacing="0">
+        <tr id="pageHeader">
+            <td colspan="2">
+                <img
+                    srcset="
+                        TechProfBanner1000.png 1000w,
+                        TechProfBanner600.png 600w,
+                        TechProfBanner240.png 240w
+                    "
+                    sizes="(max-width: 120px) 240px, 600px, 1000px"
+                    src="TechProfBanner.png" 
+                    alt="TechProf Banner Image">
+            </td>
+        </tr>
+        <tr>
+            <td id="menu"><p>menu</p></td>
+            <td id="mainContent">
+                <h1>Video Games</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem officiis non praesentium aspernatur nostrum voluptatem perferendis commodi minus odit libero in autem, cumque vel sint officia voluptas. Suscipit, repudiandae!</p>
+
+                <iframe width="800" height="342" src="https://www.youtube.com/embed/EDep287Kvuo" title="Minecraft: GUESS THE BUILD: THEMED!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <table border="1" cellspacing="0" cellpadding="2">
+                    <caption>My Schedule</caption>
+                    <colgroup>
+                        <col>
+                        <col style="background-color: gray;">
+                        <col span="2">
+                        <col style="background-color: pink; font-weight: bold;">
+                    </colgroup>
+                    <tr>
+                        <td rowspan="7" scope="col"><span class="rotatedText">Week</span></td>
+                        <td>1</td>
+                        <td>topic 1</td>
+                        <td>topic 2</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>topic 3</td>
+                        <td>topic 4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>topic 5</td>
+                        <td>topic 6</td>
+                        <td>25%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Reading Week</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>topic 7</td>
+                        <td>topic 8</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>topic 9</td>
+                        <td>topic 10</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>topic 11</td>
+                        <td>FINAL TEST</td>
+                        <td>40%</td>
+                    </tr>
+                    
+                </table>
+
+            </td>
+        </tr>
+        <tr id="pageFooter">
+            <td colspan="2">footer</td>
+        </tr>
+    </table>
+</body>
+</html>
