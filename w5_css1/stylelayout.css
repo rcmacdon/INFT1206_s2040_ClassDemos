@@ -1,0 +1,84 @@
+/*
+    Title:  INFT1206 Week 5 Demo 2
+    Author: Clint MacDonald
+    Date:   June 4, 2024
+    Purpose: Learning Page Layout with HTML5 and CSS3
+
+*/
+
+body {
+    background-color: #222222;
+    color: lightgray;
+    margin: 0px;
+}
+
+header {
+    background-image: url("TechProfBanner.png");
+    background-size: contain;
+    width: 100%;
+    min-height: 220px;
+    margin: 0px;
+    padding: 20px;
+}
+
+#MainContainer {
+    width: 860px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+}
+
+/* NAV */
+nav {
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    background-color: steelblue;
+}
+
+nav ul {
+    list-style: none;
+    height: 30px;
+}
+
+nav li {
+    height: 16px;
+    background-color: navy;
+    padding: 7px;
+    float: left;
+    width: 120px;
+    text-align: center;
+    border-left: 1px navy solid;
+    border-right: 1px navy solid;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    background-color: red;
+}
+
+aside {
+    background-color: gray;
+    width: 200px;
+    float: left;
+    padding: 5px;
+}
+aside h1 {
+    margin-top: 0px;
+}
+
+#MainContent {
+    margin-left: 210px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
