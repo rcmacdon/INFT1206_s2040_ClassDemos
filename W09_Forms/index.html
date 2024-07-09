@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Title:  INFT1206-05 Week 9 Demo
+    Author: Clint MacDonald
+    Date:   July 9, 2024
+    Purpose: Introduction to Forms 
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Forms</title>
+    <style>
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+        }
+        legend {
+            font-weight: bold;
+        }
+        fieldset {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    
+
+<h1>
+    Registration
+</h1>
+
+<form action="./" method="get">
+    <label for="firstName" >First Name:&nbsp;</label><input type="text" name="firstName" id="firstName" title="Please enter your first name" placeholder="first name" required>
+    <br>
+    <label for="lastName">Last Name:&nbsp;</label><input type="text" name="lastName" id="lastName">
+    <br>
+    <label for="pd">Password:&nbsp;</label><input type="password" name="pd" id="pd">
+    <br>
+    <label for="dob">Date of Birth:&nbsp;</label><input type="date" name="dob" id="dob">
+    <br>
+    <label for="city">City:&nbsp;</label><input type="text" name="city" id="city">
+    <br>
+    <label for="prov">Prov.:&nbsp;</label><select id="prov" name="prov">
+            <option>Alberta</option>
+            <option>Quebec</option>
+            <option>Nova Scotia</option>
+            <option>Ontario</option>
+        </select>
+        
+    <br><br>
+    <span class="Question">What is your favourite colour?</span><br>
+    <input type="radio" id="colourRed" name="favColour">Red<br>
+    <input type="radio" id="colourBlue" name="favColour">Blue<br>
+    <input type="radio" id="colourGreen" name="favColour">Green<br>
+    <input type="radio" id="colourYellow" name="favColour">Yellow<br>    
+    <br><br>
+    <fieldset>
+        <legend>What is your favourite Class?</legend>
+        <input type="radio" id="webdev" name="favClass">Web Development<br>
+        <input type="radio" id="dbase" name="favClass">Database<br>
+        <input type="radio" id="comm" name="favClass">Communications<br>
+        <input type="radio" id="math" name="favClass">Math for IT Students<br>
+    </fieldset>
+    
+    <br>
+    <br>
+    <label>&nbsp;</label><input type="reset">
+    <input type="submit" value="Register" id="subid" name="subname">
+
+
+  
+
+
+</form>
+
+
+</body>
+</html>
