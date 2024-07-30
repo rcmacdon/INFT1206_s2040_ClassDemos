@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<!--
+    Title:  INFT1206-05 Week 12 Demo
+    Author: Clint MacDonald
+    Date:   July 30, 2024
+    Purpose: Client Side Data Validation
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Demo</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form name="contactForm" method="post" action="http://mydomain.com/index.html" onsubmit="return validateForm();">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="phone">Phone (#########):</label>
+        <input type="text" name="phone"><br>
+        <label></label>
+        <input type="submit" value="Submit">
+
+        <!-- NOTE: All fields are required and valid email and phone numbers must be entered -->
+
+    </form>
+
+ 
+<!-- Code injected by live-server -->
+</body>
+</html>
